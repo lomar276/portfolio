@@ -21,7 +21,7 @@ export default function Links({ className }: LinksProps) {
   return (
     <div className={className}>
       {linkItems.map(({ icon, link }) => (
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" key={link}>
           <FontAwesomeIcon
             icon={icon}
             size="2x"
