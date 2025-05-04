@@ -5,6 +5,9 @@ import { motion } from "motion/react";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [{ title: "Portfolio - Home" }],
+  }),
 });
 
 function Index() {

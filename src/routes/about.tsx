@@ -6,6 +6,9 @@ import Astrophysic from "../components/about/Astrophysic";
 
 export const Route = createFileRoute("/about")({
   component: About,
+  head: () => ({
+    meta: [{ title: "Portfolio - About" }],
+  }),
 });
 
 function About() {
