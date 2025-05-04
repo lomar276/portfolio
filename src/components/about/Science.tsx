@@ -1,8 +1,20 @@
+import LinkPreview from "../utils/LinkPreview";
 import Section from "./Section";
 
 const c = 1.5;
 const width = 560 * c;
 const height = 315 * c;
+
+const links = [
+  {
+    link: "https://cegepgranby.ca/2019/04/08/au-quart-de-tour-a-la-finale-locale-de-science-on-tourne",
+  },
+  {
+    link: "https://scienceontourne.com/archives/defi-2019",
+    description:
+      "Construire un engin à propulsion gravitationnelle capable de tourner autour d’un cercle.",
+  },
+];
 
 export default function Science() {
   return (
@@ -30,7 +42,11 @@ export default function Science() {
               allowFullScreen
             />
 
-            {/* TODO: Link preview */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
+              {links.map(({ link, description }) => (
+                <LinkPreview key={link} url={link} description={description} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Spinner from "./Spinner";
+import Spinner from "./spinner/Spinner";
 
 interface LinkPreviewData {
   title: string;
@@ -12,7 +12,13 @@ interface LinkPreviewData {
 
 const LINK_PREVIEW_API = "https://api.microlink.io";
 
-export default function LinkPreview({ url }: { url: string }) {
+export default function LinkPreview({
+  url,
+  description,
+}: {
+  url: string;
+  description?: string;
+}) {
   const [data, setData] = useState<LinkPreviewData | null>(null);
 
   useEffect(() => {
@@ -22,7 +28,6 @@ export default function LinkPreview({ url }: { url: string }) {
       })
       .then((json) => {
         const { data } = json;
-        console.log("Link preview data:", data);
         setData(data);
       });
   }, [url]);
@@ -55,8 +60,10 @@ export default function LinkPreview({ url }: { url: string }) {
           className="w-full h-auto rounded-lg"
         />
 
-        {data.description && (
-          <div className="text-md text-slate-200">{data.description}</div>
+        {(description || data.description) && (
+          <div className="text-md text-slate-200">
+            {description ? description : data.description}
+          </div>
         )}
       </div>
     </div>
