@@ -6,7 +6,7 @@ interface CardProps {
 
 export default function Card({ title, description, logo }: CardProps) {
   return (
-    <div className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3 zoom">
+    <div className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3 hover:scale-105 duration-500">
       <div className="justify-center items-center flex flex-col space-y-1">
         {logo}
 
