@@ -14,7 +14,7 @@ export default function Section({ title, children }: SectionProps) {
       viewport={{ once: true }}
     >
       <h2 className="text-6xl font-bold">{title}</h2>
-      <div className="mt-3">{children}</div>
+      <div className="mt-5">{children}</div>
     </motion.div>
   );
 }

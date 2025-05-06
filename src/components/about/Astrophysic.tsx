@@ -13,14 +13,10 @@ const links = [
 export default function Astrophysic() {
   return (
     <Section title="Astrophysique">
-      <div className="mt-5">
-        <p>Voici quelques articles qui parlent de nous:</p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
-          {links.map(({ link }) => (
-            <LinkPreview key={link} url={link} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
+        {links.map(({ link }) => (
+          <LinkPreview key={link} url={link} />
+        ))}
       </div>
     </Section>
   );

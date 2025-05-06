@@ -16,6 +16,7 @@ function Index() {
       <div className="flex justify-center items-center space-x-32 mt-5">
         <img
           className="rounded-full shadow-lg"
+          draggable={false}
           src={profile}
           alt="Profile picture"
         />

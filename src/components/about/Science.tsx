@@ -20,13 +20,15 @@ export default function Science() {
   return (
     <Section title="Science, on tourne !">
       <div>
-        <ul className="list-disc">
-          <li>
-            Qualification 6<sup>ième</sup> place sur les 27 équipes
-          </li>
+        <div className="flex justify-center">
+          <ul className="list-disc text-left">
+            <li>
+              Qualification 6<sup>ième</sup> place sur les 27 équipes
+            </li>
 
-          <li>Entrevue sur Canal Savoir</li>
-        </ul>
+            <li>Entrevue sur Canal Savoir</li>
+          </ul>
+        </div>
 
         <div className="flex justify-center mt-4">
           <div>
