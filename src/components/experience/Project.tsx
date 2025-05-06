@@ -51,7 +51,7 @@ export default function Project() {
     <Section title="Projects">
       <div className="space-y-4">
         {projects.map((project) => (
-          <ExperienceCard experience={project} />
+          <ExperienceCard key={project.title} experience={project} />
         ))}
       </div>
     </Section>
