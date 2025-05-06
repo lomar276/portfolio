@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import WorkExperience from "../components/experience/WorkExperience";
+import Project from "../components/experience/Project";
 
 export const Route = createFileRoute("/experience")({
   component: Experience,
@@ -12,6 +13,7 @@ function Experience() {
   return (
     <div>
       <WorkExperience />
+      <Project />
     </div>
   );
 }

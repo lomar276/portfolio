@@ -2,8 +2,8 @@ import { Link } from "@tanstack/react-router";
 
 const pages = [
   { to: "/", text: "Accueil" },
-  { to: "/about", text: "À propos" },
   { to: "/experience", text: "Expérience" },
+  { to: "/about", text: "À propos" },
 ];
 
 export default function Navbar() {

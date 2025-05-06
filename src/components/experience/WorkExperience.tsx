@@ -9,8 +9,8 @@ const workExperiences = [
       location: "St-Césaire, QC",
     },
     dates: {
-      start: "2024-07",
-      end: "2024-09",
+      start: new Date("2024-07"),
+      end: new Date("2024-09"),
     },
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -26,8 +26,8 @@ const workExperiences = [
       location: "Québec, QC",
     },
     dates: {
-      start: "2023-06",
-      end: "2023-09",
+      start: new Date("2023-06"),
+      end: new Date("2023-09"),
     },
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -52,8 +52,8 @@ const workExperiences = [
       location: "Québec, QC",
     },
     dates: {
-      start: "2022-07",
-      end: "2022-09",
+      start: new Date("2022-07"),
+      end: new Date("2022-09"),
     },
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
