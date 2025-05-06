@@ -33,7 +33,7 @@ export default function WorkExperienceCard({
   experience,
 }: ExperienceCardProps) {
   return (
-    <div className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3">
+    <div className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3 duration-500">
       <div className="relative w-full">
         <div className="absolute top-0 right-0 text-sm text-slate-400">
           {experience.info}

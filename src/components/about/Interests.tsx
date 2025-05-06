@@ -7,12 +7,12 @@ const interests = [
   {
     name: "Mathématiques",
     logo: Sigma,
-    description: "Je me passionne pour les maths",
   },
   {
     name: "Programmation",
     logo: Code,
-    description: "Je me passionne pour la programmation, notamment fullstack",
+    description:
+      "Je me passionne pour la programmation, surtout le développement web",
   },
   {
     name: "Cinéma (montage vidéo)",
@@ -22,12 +22,10 @@ const interests = [
   {
     name: "Tennis, Ping-pong et Vélo",
     logo: batBall,
-    description: "!",
   },
   {
     name: "Jeux de société",
     logo: Dice6,
-    description: "!",
   },
 ];
 

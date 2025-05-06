@@ -35,7 +35,7 @@ export default function LinkPreview({
   return (
     <div
       onClick={() => window.open(url, "_blank")}
-      className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3"
+      className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3 duration-500"
     >
       <div className="justify-center items-center flex flex-col space-y-1">
         {!data ? (
