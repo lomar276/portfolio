@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import LinkPreview from "../utils/LinkPreview";
 import Section from "./Section";
 
@@ -12,27 +13,26 @@ const links = [
   {
     link: "https://scienceontourne.com/archives/defi-2019",
     description:
-      "Construire un engin à propulsion gravitationnelle capable de tourner autour d’un cercle.",
+      "Construire un engin à propulsion gravitationnelle capable de tourner autour d'un cercle.",
   },
 ];
 
 export default function Science() {
+  const { t } = useTranslation();
+
   return (
     <Section title="Science, on tourne !">
       <div>
         <div className="flex justify-center">
           <ul className="list-disc text-left">
-            <li>
-              Qualification 6<sup>ième</sup> place sur les 27 équipes
-            </li>
-
-            <li>Entrevue sur Canal Savoir</li>
+            {Array.from({ length: 2 }, (_, i) => (
+              <li key={i}>{t(`science.bulletPoints.${i}`)}</li>
+            ))}
           </ul>
         </div>
 
         <div className="flex justify-center mt-4">
           <div>
-            <div className="text-center text-2xl mb-2">Notre bolide</div>
             <iframe
               className="w-full aspect-video rounded-xl shadow-lg mb-5"
               width={width}

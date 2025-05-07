@@ -1,12 +1,14 @@
 import { Link } from "@tanstack/react-router";
-
-const pages = [
-  { to: "/", text: "Accueil" },
-  { to: "/experience", text: "Expérience" },
-  { to: "/about", text: "À propos" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation();
+  const pages = [
+    { to: "/", text: t("navbar.home") },
+    { to: "/experience", text: t("navbar.experience") },
+    { to: "/about", text: t("navbar.about") },
+  ];
+
   return (
     <nav>
       <ul className="absolute flex justify-center items-center w-full h-20 top-0 left-0 space-x-4">

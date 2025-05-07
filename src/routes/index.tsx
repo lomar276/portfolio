@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { constants } from "../constants";
 import profile from "../assets/images/profile.jpg";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -11,6 +12,8 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="flex justify-center items-center space-x-32 mt-5">
@@ -28,7 +31,7 @@ function Index() {
             animate={{ x: -50 }}
             transition={{ duration: 1.25, ease: "easeInOut", delay: 0.5 }}
           >
-            Bonjour, je me présente
+            {t("home.title")}
           </motion.div>
 
           <motion.div
@@ -42,17 +45,7 @@ function Index() {
         </div>
       </div>
 
-      <p className="mt-5">
-        Je me présente, {constants.NAME}. Je suis actuellement étudiant à ma
-        dernière année de génie logiciel à l'Université Laval. Mon parcours
-        académique m'a permis de nourrir une passion profonde pour le
-        développement web et mobile, avec un intérêt marqué pour le frontend.
-        Cette facette du développement logiciel me permet d'exprimer ma
-        créativité tout en m'engageant dans des projets innovants.
-        Parallèlement, je nourris également un vif intérêt pour la
-        cybersécurité, conscient de son importance croissante dans le paysage
-        technologique actuel.
-      </p>
+      <p className="mt-5">{t("home.description", { name: constants.NAME })}</p>
     </div>
   );
 }

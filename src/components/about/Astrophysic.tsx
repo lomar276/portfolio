@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import LinkPreview from "../utils/LinkPreview";
 import Section from "./Section";
 
@@ -11,8 +12,10 @@ const links = [
 ];
 
 export default function Astrophysic() {
+  const { t } = useTranslation();
+
   return (
-    <Section title="Astrophysique">
+    <Section title={t("astrophysic.title")}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
         {links.map(({ link }) => (
           <LinkPreview key={link} url={link} />

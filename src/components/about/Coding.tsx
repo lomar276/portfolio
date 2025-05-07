@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Card from "../Card";
 import Section from "./Section";
 
@@ -95,8 +96,10 @@ const python = [
 const tools = web.concat(java, cSharp, python, database);
 
 export default function Coding() {
+  const { t } = useTranslation();
+
   return (
-    <Section title="Programmation">
+    <Section title={t("programming.title")}>
       <div className="grid grid-cols-3 gap-4">
         {tools.map((tool) => (
           <Card

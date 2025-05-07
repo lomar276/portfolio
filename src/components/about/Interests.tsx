@@ -2,36 +2,37 @@ import { Sigma, Code, Clapperboard, Dice6, Icon } from "lucide-react";
 import { batBall } from "@lucide/lab";
 import Section from "./Section";
 import Card from "../Card";
-
-const interests = [
-  {
-    name: "Mathématiques",
-    logo: Sigma,
-  },
-  {
-    name: "Programmation",
-    logo: Code,
-    description:
-      "Je me passionne pour la programmation, surtout le développement web",
-  },
-  {
-    name: "Cinéma (montage vidéo)",
-    logo: Clapperboard,
-    description: "Je me passionne pour le cinéma et le montage vidéo",
-  },
-  {
-    name: "Tennis, Ping-pong et Vélo",
-    logo: batBall,
-  },
-  {
-    name: "Jeux de société",
-    logo: Dice6,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Interests() {
+  const { t } = useTranslation();
+  const interests = [
+    {
+      name: t("interests.math.title"),
+      logo: Sigma,
+    },
+    {
+      name: t("interests.programming.title"),
+      logo: Code,
+      description: t("interests.programming.description"),
+    },
+    {
+      name: t("interests.cinema.title"),
+      logo: Clapperboard,
+      description: t("interests.cinema.description"),
+    },
+    {
+      name: t("interests.sports.title"),
+      logo: batBall,
+    },
+    {
+      name: t("interests.boardGames.title"),
+      logo: Dice6,
+    },
+  ];
+
   return (
-    <Section title="Mes intérêts">
+    <Section title={t("interests.title")}>
       <div className="grid grid-cols-3 gap-4">
         {interests.map(({ name, description, logo: Logo }) => (
           <Card

@@ -16,10 +16,13 @@
     "@lucide/lab": "^0.1.2",
     "@tailwindcss/vite": "^4.1.5",
     "@tanstack/react-router": "^1.119.0",
+    "i18next": "^25.1.1",
+    "i18next-http-backend": "^3.0.2",
     "lucide-react": "^0.507.0",
     "motion": "^12.9.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.5.1",
     "tailwindcss": "^4.1.5"
   },
   "devDependencies": {

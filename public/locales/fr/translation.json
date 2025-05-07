@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "experience": "Expérience",
+    "about": "À propos"
+  },
+  "home": {
+    "title": "Bonjour, je me présente",
+    "description": "Je me présente, {{name}}. Je suis actuellement étudiant à ma dernière année de génie logiciel à l'Université Laval. Mon parcours académique m'a permis de nourrir une passion profonde pour le développement web et mobile, avec un intérêt marqué pour le frontend. Cette facette du développement logiciel me permet d'exprimer ma créativité tout en m'engageant dans des projets innovants. Parallèlement, je nourris également un vif intérêt pour la cybersécurité, conscient de son importance croissante dans le paysage technologique actuel."
+  },
+  "programming": {
+    "title": "Programmation"
+  },
+  "interests": {
+    "title": "Mes intérêts",
+    "math": {
+      "title": "Mathématiques"
+    },
+    "programming": {
+      "title": "Programmation",
+      "description": "Je me passionne pour la programmation, surtout le développement web"
+    },
+    "cinema": {
+      "title": "Cinéma (montage vidéo)",
+      "description": "Je me passionne pour le cinéma et le montage vidéo"
+    },
+    "sports": {
+      "title": "Tennis, Ping-pong et Vélo"
+    },
+    "boardGames": {
+      "title": "Jeux de société"
+    }
+  },
+  "science": {
+    "title": "Science, on tourne !",
+    "bulletPoints": {
+      "0": "Qualification 6ième place sur les 27 équipes",
+      "1": "Entrevue sur Canal Savoir"
+    }
+  },
+  "astrophysic": {
+    "title": "Astrophysique"
+  },
+  "experience": {
+    "workExperience": "Expérience de travail",
+    "projects": "Projets",
+    "ingenoProject": {
+      "title": "Application Web Ingeno",
+      "description": [
+        "Concevoir une application web qui utilise AWS Bedrock (assistant IA) afin de résumer et faire le lien entre divers documents, le tout avec une interface moderne",
+        "Utilisé AWS Bedrock (knowledge base, vectorisation des données, streaming du texte)",
+        "Gestion de l'authentification des utilisateurs",
+        "S'assurer de livrer une couverture de tests au-dessus des 80%",
+        "Adopter la méthodologie SCRUM avec des sprints de 2 semaines gérés sur la plateforme JIRA. À chaque sprint, définir les récits utilisateurs auxquels l’équipe s’engageait à travailler et à compléter"
+      ]
+    }
+  }
+}

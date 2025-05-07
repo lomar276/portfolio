@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "home": "Home",
+    "experience": "Experience",
+    "about": "About"
+  },
+  "home": {
+    "title": "Hello, I'm",
+    "description": "Hello, I'm {{name}}. I am currently a student in my final year of software engineering at Laval University. My academic journey has allowed me to nurture a deep passion for web and mobile development, with a strong interest in frontend development. This aspect of software development allows me to express my creativity while engaging in innovative projects. At the same time, I also have a keen interest in cybersecurity, aware of its growing importance in today's technological landscape."
+  },
+  "programming": {
+    "title": "Programming"
+  },
+  "interests": {
+    "title": "My interests",
+    "math": {
+      "title": "Mathematics"
+    },
+    "programming": {
+      "title": "Programming",
+      "description": "I am passionate about programming, especially web development"
+    },
+    "cinema": {
+      "title": "Cinema (video editing)",
+      "description": "I am passionate about cinema and video editing"
+    },
+    "sports": {
+      "title": "Tennis, Ping-pong and Bike"
+    },
+    "boardGames": {
+      "title": "Board games"
+    }
+  },
+  "science": {
+    "title": "Science, on tourne !",
+    "bulletPoints": {
+      "0": "Qualification 6th place out of 27 teams",
+      "1": "Interview on Canal Savoir"
+    }
+  },
+  "astrophysic": {
+    "title": "Astrophysic"
+  },
+  "experience": {
+    "workExperience": "Work experience",
+    "projects": "Projects",
+    "ingenoProject": {
+      "title": "Application Web Ingeno",
+      "description": [
+        "Concevoir une application web qui utilise AWS Bedrock (assistant IA) afin de résumer et faire le lien entre divers documents, le tout avec une interface moderne",
+        "Utilisé AWS Bedrock (knowledge base, vectorisation des données, streaming du texte)",
+        "Gestion de l'authentification des utilisateurs",
+        "S'assurer de livrer une couverture de tests au-dessus des 80%",
+        "Adopter la méthodologie SCRUM avec des sprints de 2 semaines gérés sur la plateforme JIRA. À chaque sprint, définir les récits utilisateurs auxquels l’équipe s’engageait à travailler et à compléter"
+      ]
+    }
+  }
+}

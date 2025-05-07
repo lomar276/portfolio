@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Section from "../about/Section";
 import WorkExperienceCard from "./WorkExperienceCard";
 
@@ -72,8 +73,10 @@ const workExperiences = [
 ];
 
 export default function WorkExperience() {
+  const { t } = useTranslation();
+
   return (
-    <Section title="Work Experience">
+    <Section title={t("experience.workExperience")}>
       <div className="flex flex-col gap-4">
         {workExperiences.map((workExperience) => (
           <WorkExperienceCard
