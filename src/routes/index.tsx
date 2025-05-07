@@ -13,13 +13,19 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div>
-      <div className="flex justify-center items-center space-x-32 mt-5">
-        <img
-          className="rounded-full shadow-lg"
-          draggable={false}
-          src={profile}
-          alt="Profile picture"
-        />
+      <div className="flex justify-center items-center space-x-32 space-y-8">
+        <div className="flex flex-col items-center space-y-2">
+          <img
+            className="rounded-full shadow-lg"
+            draggable={false}
+            src={profile}
+            alt="Profile picture"
+          />
+
+          <h2 className="text-3xl underline decoration-secondary-hover-500 underline-offset-8">
+            Junior software engineer
+          </h2>
+        </div>
 
         <div>
           <motion.div
@@ -28,7 +34,7 @@ function Index() {
             animate={{ x: -50 }}
             transition={{ duration: 1.25, ease: "easeInOut", delay: 0.5 }}
           >
-            Bonjour, je me présente
+            Hello, my name is
           </motion.div>
 
           <motion.div
@@ -42,16 +48,8 @@ function Index() {
         </div>
       </div>
 
-      <p className="mt-5">
-        Je me présente, {constants.NAME}. Je suis actuellement étudiant à ma
-        dernière année de génie logiciel à l'Université Laval. Mon parcours
-        académique m'a permis de nourrir une passion profonde pour le
-        développement web et mobile, avec un intérêt marqué pour le frontend.
-        Cette facette du développement logiciel me permet d'exprimer ma
-        créativité tout en m'engageant dans des projets innovants.
-        Parallèlement, je nourris également un vif intérêt pour la
-        cybersécurité, conscient de son importance croissante dans le paysage
-        technologique actuel.
+      <p className="text-xl mt-5">
+        {`Let me introduce myself, ${constants.NAME}. I'm currently in my final year of software engineering at Université Laval. My academic background has allowed me to develop a deep passion for web and mobile development, with a strong interest in front-end development. This aspect of software development allows me to express my creativity while engaging in innovative projects. At the same time, I also have a keen interest in cybersecurity, aware of its growing importance in today's technological landscape.`}
       </p>
     </div>
   );

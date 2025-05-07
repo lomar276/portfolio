@@ -5,33 +5,33 @@ import Card from "../Card";
 
 const interests = [
   {
-    name: "Mathématiques",
+    name: "Mathematics",
     logo: Sigma,
   },
   {
-    name: "Programmation",
+    name: "Programming",
     logo: Code,
     description:
-      "Je me passionne pour la programmation, surtout le développement web",
+      "I am passionate about programming, especially web development.",
   },
   {
-    name: "Cinéma (montage vidéo)",
+    name: "Cinema (video editing)",
     logo: Clapperboard,
-    description: "Je me passionne pour le cinéma et le montage vidéo",
+    description: "I am passionate about cinema and video editing",
   },
   {
-    name: "Tennis, Ping-pong et Vélo",
+    name: "Tennis, Ping-pong and Cycling",
     logo: batBall,
   },
   {
-    name: "Jeux de société",
+    name: "Board games",
     logo: Dice6,
   },
 ];
 
 export default function Interests() {
   return (
-    <Section title="Mes intérêts">
+    <Section title="My interests">
       <div className="grid grid-cols-3 gap-4">
         {interests.map(({ name, description, logo: Logo }) => (
           <Card

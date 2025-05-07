@@ -72,7 +72,7 @@ const cSharp = [
 
 const database = [
   {
-    src: "https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2022-03/black.png",
+    src: "https://images.icon-icons.com/2699/PNG/512/mongodb_logo_icon_170943.png",
     alt: "MongoDB",
   },
   {
@@ -96,7 +96,7 @@ const tools = web.concat(java, cSharp, python, database);
 
 export default function Coding() {
   return (
-    <Section title="Programmation">
+    <Section title="Programming">
       <div className="grid grid-cols-3 gap-4">
         {tools.map((tool) => (
           <Card

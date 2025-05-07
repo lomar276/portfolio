@@ -12,8 +12,13 @@ const links = [
   {
     link: "https://scienceontourne.com/archives/defi-2019",
     description:
-      "Construire un engin à propulsion gravitationnelle capable de tourner autour d’un cercle.",
+      "Build a gravitational propulsion device capable of rotating in a circle.",
   },
+];
+
+const description = [
+  "Qualification 6th place out of 27 teams",
+  "Interview on Canal Savoir",
 ];
 
 export default function Science() {
@@ -22,11 +27,9 @@ export default function Science() {
       <div>
         <div className="flex justify-center">
           <ul className="list-disc text-left">
-            <li>
-              Qualification 6<sup>ième</sup> place sur les 27 équipes
-            </li>
-
-            <li>Entrevue sur Canal Savoir</li>
+            {description.map((desc, index) => (
+              <li key={index}>{desc}</li>
+            ))}
           </ul>
         </div>
 
