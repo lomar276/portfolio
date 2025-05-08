@@ -104,7 +104,7 @@ export default function Coding() {
             title={tool.alt}
             logo={
               <img
-                className="w-24"
+                className="w-24 h-auto max-w-full object-cover"
                 draggable={false}
                 src={tool.src}
                 alt={tool.alt}

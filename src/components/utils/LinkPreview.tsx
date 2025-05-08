@@ -48,7 +48,7 @@ export default function LinkPreview({
                 </div>
                 {linkPreview.logo && (
                   <img
-                    className="w-6 h-6 rounded-full"
+                    className="w-6 h-auto max-w-full object-cover rounded-full"
                     draggable={false}
                     src={linkPreview.logo.url}
                     alt={linkPreview.publisher}

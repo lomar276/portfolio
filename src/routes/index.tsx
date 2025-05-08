@@ -30,7 +30,7 @@ function Index() {
 
         <div>
           <motion.div
-            className="text-4xl"
+            className="text-2xl sm:text-4xl"
             initial={{ x: 0 }}
             animate={{ x: -50 }}
             transition={{ duration: 1.25, ease: "easeInOut", delay: 0.5 }}
@@ -39,7 +39,7 @@ function Index() {
           </motion.div>
 
           <motion.div
-            className="text-6xl text-secondary-hover-500"
+            className="text-3xl sm:text-6xl text-secondary-hover-500"
             initial={{ x: 0 }}
             animate={{ x: 50 }}
             transition={{ duration: 1.25, ease: "easeInOut", delay: 0.5 }}

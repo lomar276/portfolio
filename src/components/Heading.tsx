@@ -5,7 +5,7 @@ export default function Heading() {
   return (
     <div>
       <Navbar />
-      <Links className="absolute flex space-x-2 top-3 right-3" />
+      <Links className="md:absolute md:top-3 md:right-3 md:flex max-[48rem]:mt-3 space-x-2" />
     </div>
   );
 }
