@@ -6,18 +6,19 @@ import {
 } from "@tanstack/react-router";
 import Heading from "../components/Heading";
 import Footer from "../components/Footer";
-import "./App.css";
 
 export const Route = createRootRoute({
   component: () => (
-    <>
+    <div className="max-w-screen-xl mx-auto p-8 text-center">
       <HeadContent />
       <Heading />
-      <div className="pb-20">
+
+      <div className="m-0 flex place-items-center min-w-[320px] min-h-screen pb-20">
         <Outlet />
       </div>
+
       <Footer />
-    </>
+    </div>
   ),
   notFoundComponent: () => <Navigate to="/" params />,
 });

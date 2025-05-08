@@ -13,8 +13,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div>
-      <div className="flex justify-center items-center space-x-32 space-y-8">
-        <div className="flex flex-col items-center space-y-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center space-y-8">
+        <div>
           <img
             className="rounded-full shadow-lg"
             draggable={false}
