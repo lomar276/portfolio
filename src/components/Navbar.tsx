@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 const pages = [
   { to: "/", text: "Home" },
-  { to: "/experience", text: "Experiences" },
+  { to: "/experiences", text: "Experiences" },
   { to: "/about", text: "About" },
 ];
 
@@ -14,9 +14,10 @@ export default function Navbar() {
           <li className="text-xl relative" key={to}>
             <Link
               to={to}
-              className="hover:text-secondary-hover-500 hover:mb-5 duration-300 [&.active]:underline [&.active]:underline-offset-8 [&.active]:decoration-secondary-hover-500"
+              className="group hover:text-secondary-hover-500 hover:mb-5 duration-300"
             >
               {text}
+              <div className="origin-center scale-x-0 group-[.active]:scale-x-100 transition-transform duration-500 h-0.5 bg-secondary-hover-500" />
             </Link>
           </li>
         ))}

@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { constants } from "../constants";
 import profile from "../assets/images/profile.jpg";
 import { motion } from "motion/react";
+import Section from "../components/about/Section";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -12,7 +13,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div>
+    <Section>
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center space-y-8">
         <div>
           <img
@@ -51,6 +52,6 @@ function Index() {
       <p className="text-xl mt-5">
         {`Let me introduce myself, ${constants.NAME}. I'm currently in my final year of software engineering at Université Laval. My academic background has allowed me to develop a deep passion for web and mobile development, with a strong interest in front-end development. This aspect of software development allows me to express my creativity while engaging in innovative projects. At the same time, I also have a keen interest in cybersecurity, aware of its growing importance in today's technological landscape.`}
       </p>
-    </div>
+    </Section>
   );
 }

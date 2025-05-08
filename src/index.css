@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* --color-secondary-500: rgba(255, 255, 255, 0.87); */
   --color-secondary-hover-500: var(--color-red-500);
 }
 
