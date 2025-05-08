@@ -35,10 +35,6 @@ export default function WorkExperienceCard({
   return (
     <div className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3 duration-500">
       <div className="relative w-full">
-        <div className="absolute top-0 right-0 text-sm text-slate-400">
-          {experience.info}
-        </div>
-
         <div className="justify-center items-center flex flex-col space-y-4">
           <div>
             <div className="text-xl text-slate-50 text-center">
@@ -46,6 +42,10 @@ export default function WorkExperienceCard({
             </div>
 
             <div>{experience.subtitle}</div>
+
+            <div className="md:absolute md:top-0 md:right-0 text-sm text-slate-400">
+              {experience.info}
+            </div>
           </div>
 
           <ul className="list-disc text-slate-200 text-left ml-8">
