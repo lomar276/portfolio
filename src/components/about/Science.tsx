@@ -29,9 +29,9 @@ export default function Science() {
           </ul>
         </div>
 
-        <div className="flex flex-col items-center mt-4">
+        <div className="flex flex-col mt-4">
           <iframe
-            className="w-full max-w-3xl aspect-video rounded-xl shadow-lg"
+            className="aspect-video rounded-xl shadow-lg"
             src="https://www.youtube.com/embed/Qtej_VmtWyc?si=ufRWo0HqoIlkd_wO"
             title="Science, on tourne ! 2019 - Cégep de Granby"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

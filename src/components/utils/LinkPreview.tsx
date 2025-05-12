@@ -30,14 +30,14 @@ export default function LinkPreview({
       onClick={() => window.open(url, "_blank")}
       className="bg-gray-800/[.75] hover:bg-slate-700/[.75] shadow-sm hover:shadow-xl hover:cursor-pointer rounded-lg p-3 duration-500"
     >
-      <div className="justify-center items-center flex flex-col space-y-1">
+      <div className="flex flex-col justify-center items-center space-y-1">
         {error ? (
           <CloudAlert size={150} />
         ) : !linkPreview ? (
           <Spinner />
         ) : (
           <>
-            <div className="flex flex-wrap justify-center space-y-2 sm:space-y-0 sm:space-x-4 w-full">
+            <div className="flex flex-wrap justify-center w-full">
               <div className="flex-grow text-lg text-slate-50 text-center">
                 {linkPreview.title}
               </div>
@@ -70,7 +70,7 @@ export default function LinkPreview({
 
             {(description || linkPreview.description) && (
               <div className="text-sm sm:text-md text-slate-200">
-                {description ? description : linkPreview.description}
+                {description || linkPreview.description}
               </div>
             )}
           </>
