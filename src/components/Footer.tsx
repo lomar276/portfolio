@@ -3,12 +3,12 @@ import { constants } from "../constants";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between items-center w-full h-20 bg-zinc-950 px-4">
-      <div className="flex items-center space-x-2">
-        <p className="text-sm">{`© ${new Date().getFullYear()} ${constants.NAME}. All rights reserved.`}</p>
+    <footer className="flex flex-col sm:flex-row sm:h-20 justify-between items-center gap-y-4 bg-zinc-950 px-4 py-6 sm:py-0 text-zinc-200">
+      <div className="text-sm text-center">
+        © {new Date().getFullYear()} {constants.NAME}. All rights reserved.
       </div>
 
-      <Links className="space-x-2" />
+      <Links className="flex flex-wrap justify-center sm:justify-end gap-x-2" />
     </footer>
   );
 }
