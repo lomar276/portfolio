@@ -9,7 +9,7 @@ const pages = [
 export default function Navbar() {
   return (
     <nav>
-      <ul className="flex justify-center items-center w-full space-x-4">
+      <ul className="flex max-sm:flex-col justify-center items-center w-full sm:space-x-4">
         {pages.map(({ to, text }) => (
           <li className="text-xl" key={to}>
             <Link

@@ -7,9 +7,8 @@ export default function Footer() {
       <div className="flex items-center space-x-2">
         <p className="text-sm">{`© ${new Date().getFullYear()} ${constants.NAME}. All rights reserved.`}</p>
       </div>
-      <div className="flex items-center space-x-4">
-        <Links className="flex space-x-4" />
-      </div>
+
+      <Links className="space-x-2" />
     </footer>
   );
 }
