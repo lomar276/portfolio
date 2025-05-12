@@ -15,12 +15,12 @@ function Index() {
   return (
     <Section>
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center space-y-8">
-        <div>
+        <div className="flex flex-col items-center justify-center">
           <img
-            className="rounded-full shadow-lg"
+            className="w-3/4 h-3/4 rounded-full shadow-lg"
             draggable={false}
             src={profile}
-            alt="Profile picture"
+            alt={`${constants.NAME} profile picture`}
           />
 
           <h2 className="text-3xl underline decoration-secondary-hover-500 underline-offset-8">

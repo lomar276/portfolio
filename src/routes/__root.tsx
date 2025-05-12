@@ -10,13 +10,19 @@ import Footer from "../components/Footer";
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div className="flex min-h-screen max-w-screen flex-col overflow-x-hidden p-8 text-center">
-        <HeadContent />
-        <Heading />
-        <Outlet />
-      </div>
+      <HeadContent />
 
-      <Footer />
+      <div className="flex flex-col min-h-screen text-center">
+        <Heading className="mt-2" />
+
+        <main className="flex-1 flex items-center justify-center p-4">
+          <div className="w-full max-w-4xl">
+            <Outlet />
+          </div>
+        </main>
+
+        <Footer />
+      </div>
     </>
   ),
   notFoundComponent: () => <Navigate to="/" params />,

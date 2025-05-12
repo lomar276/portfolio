@@ -37,8 +37,8 @@ export default function LinkPreview({
           <Spinner />
         ) : (
           <>
-            <div className="xl:flex justify-between w-full">
-              <div className="flex-1 text-xl text-slate-50 text-center">
+            <div className="flex flex-wrap justify-center space-y-2 sm:space-y-0 sm:space-x-4 w-full">
+              <div className="flex-grow text-lg text-slate-50 text-center">
                 {linkPreview.title}
               </div>
 
@@ -46,9 +46,10 @@ export default function LinkPreview({
                 <div className="text-sm text-slate-400">
                   {linkPreview.publisher}
                 </div>
+
                 {linkPreview.logo && (
                   <img
-                    className="w-6 h-auto max-w-full object-cover rounded-full"
+                    className="w-6 h-6 rounded-full"
                     draggable={false}
                     src={linkPreview.logo.url}
                     alt={linkPreview.publisher}
@@ -61,14 +62,14 @@ export default function LinkPreview({
               <img
                 draggable={false}
                 src={linkPreview.image.url}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto aspect-3/2 object-contain rounded-lg"
               />
             ) : (
               <Image size={150} />
             )}
 
             {(description || linkPreview.description) && (
-              <div className="text-md text-slate-200">
+              <div className="text-sm sm:text-md text-slate-200">
                 {description ? description : linkPreview.description}
               </div>
             )}

@@ -13,9 +13,7 @@ export default function Section({ title, children }: SectionProps) {
       whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
       viewport={{ once: true }}
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-        {title}
-      </h2>
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">{title}</h2>
       <div className="mt-5">{children}</div>
     </motion.section>
   );

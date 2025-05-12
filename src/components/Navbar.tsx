@@ -11,10 +11,10 @@ export default function Navbar() {
     <nav>
       <ul className="flex justify-center items-center w-full space-x-4">
         {pages.map(({ to, text }) => (
-          <li className="text-xl relative" key={to}>
+          <li className="text-xl" key={to}>
             <Link
               to={to}
-              className="group hover:text-secondary-hover-500 hover:mb-5 duration-300"
+              className="group hover:text-secondary-hover-500 duration-300"
             >
               {text}
               <div className="origin-center scale-x-0 group-[.active]:scale-x-100 transition-transform duration-500 h-0.5 bg-secondary-hover-500" />

@@ -33,23 +33,26 @@ export default function Interests() {
   return (
     <Section title="My interests">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {interests.map(({ name, description, logo: Logo }) => (
-          <Card
-            key={name}
-            title={name}
-            description={description}
-            logo={
-              Array.isArray(Logo) ? (
-                <Icon
-                  iconNode={Logo}
-                  className="w-16 h-16 mx-auto text-slate-50"
-                />
-              ) : (
-                <Logo className="w-16 h-16 mx-auto text-slate-50" />
-              )
-            }
-          />
-        ))}
+        {interests.map((interest) => {
+          const { name, description } = interest;
+          return (
+            <Card
+              key={name}
+              title={name}
+              description={description}
+              logo={
+                Array.isArray(interest.logo) ? (
+                  <Icon
+                    iconNode={interest.logo}
+                    className="w-24 h-auto aspect-3/2 text-slate-50"
+                  />
+                ) : (
+                  <interest.logo className="w-24 h-auto aspect-3/2 text-slate-50" />
+                )
+              }
+            />
+          );
+        })}
       </div>
     </Section>
   );

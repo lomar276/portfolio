@@ -29,22 +29,20 @@ export default function Science() {
           </ul>
         </div>
 
-        <div className="flex justify-center mt-4">
-          <div>
-            <iframe
-              className="w-full aspect-video rounded-xl shadow-lg mb-5"
-              src="https://www.youtube.com/embed/Qtej_VmtWyc?si=ufRWo0HqoIlkd_wO"
-              title="Science, on tourne ! 2019 - Cégep de Granby"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
+        <div className="flex flex-col items-center mt-4">
+          <iframe
+            className="w-full max-w-3xl aspect-video rounded-xl shadow-lg"
+            src="https://www.youtube.com/embed/Qtej_VmtWyc?si=ufRWo0HqoIlkd_wO"
+            title="Science, on tourne ! 2019 - Cégep de Granby"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
-              {links.map(({ link, description }) => (
-                <LinkPreview key={link} url={link} description={description} />
-              ))}
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+            {links.map(({ link, description }) => (
+              <LinkPreview key={link} url={link} description={description} />
+            ))}
           </div>
         </div>
       </div>
