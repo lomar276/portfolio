@@ -25,7 +25,7 @@ function Index() {
             />
 
             <h2 className="text-3xl underline decoration-secondary-hover-500 underline-offset-8">
-              Junior software engineer
+              Junior in software engineering
             </h2>
           </div>
 
@@ -51,14 +51,14 @@ function Index() {
         </div>
 
         <p className="text-xl">
-          Let me introduce myself, {constants.NAME}. I'm currently in my final
-          year of software engineering at Université Laval. My academic
-          background has allowed me to develop a deep passion for web and mobile
-          development, with a strong interest in front-end development. This
-          aspect of software development allows me to express my creativity
-          while engaging in innovative projects. At the same time, I also have a
-          keen interest in cybersecurity, aware of its growing importance in
-          today's technological landscape.
+          I recently graduated with a bachelor's degree in software engineering
+          from Université Laval. My academic background has allowed me to
+          develop a deep passion for web and mobile development, with a strong
+          interest in front-end development. This aspect of software development
+          allows me to express my creativity while engaging in innovative
+          projects. At the same time, I also have a keen interest in
+          cybersecurity, aware of its growing importance in today's
+          technological landscape.
         </p>
       </div>
     </Section>

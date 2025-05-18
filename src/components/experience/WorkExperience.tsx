@@ -68,7 +68,7 @@ const workExperiences = [
       "Create the company's new website (landing page)",
       "Create a portal (with authentication) so customers can control and customize their machines. This part was created from A to Z with the help of a second intern",
       "Participate in the development of the mobile application using React Native and Expo (e.g., Google Maps display map)",
-      "Modify the advertising system using Node and VLC. Everything runs on the machine's Raspberry Pi.",
+      "Modify the advertising system using Node and VLC. Everything runs on the machine's Raspberry Pi",
     ],
     toolsUsed: [
       "JavaScript",

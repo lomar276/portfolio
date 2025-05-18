@@ -50,7 +50,7 @@ export default function WorkExperienceCard({
 
           <ul className="list-disc text-slate-200 text-left ml-8">
             {experience.description.map((d) => {
-              return <li key={d}>{d}</li>;
+              return <li key={d}>{d}.</li>;
             })}
           </ul>
 
